@@ -80,7 +80,7 @@ public class ElectronicBillingSvcFilesTest {
 			restClientField.setAccessible(true);
 			restClientField.set(this.api, new RestClient());
 			
-			token = obtenerToken();
+			//token = obtenerToken();
 			
 			documentID = enviarFactura(idNumber, token);
 			adjuntarArchivo(documentID, idNumber, token);
