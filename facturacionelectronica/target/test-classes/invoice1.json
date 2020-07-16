@@ -1,0 +1,135 @@
+{
+    "CustomerInformation": {
+        "IdentificationType": 31,
+        "Identification": 1024523357,
+        "DV": 7,
+        "RegistrationName": "ROGER MARTINEZ GOMEZ",
+        "CountryCode": "CO",
+        "CountryName": "Colombia",
+        "SubdivisionCode": 11,
+        "SubdivisionName": "Bogotá",
+        "CityCode": 11001,
+        "CityName": "Bogotá, D.c.",
+        "AddressLine": "Carrera 10 10",
+        "Telephone": 1234567,
+        "Email": "adm.roger96@gmail.com",
+        "CustomerCode": "GOMEZ",
+        "AdditionalAccountID": 1,
+        "TaxLevelCodeListName": 49
+    },
+    "InvoiceGeneralInformation": {
+        "InvoiceAuthorizationNumber": 18760000001,
+        "PreinvoiceNumber": 1,
+        "InvoiceNumber": 7,
+        "DaysOff": 1,
+        "Currency": "COP",
+        "ExchangeRate": "",
+        
+        "SalesPerson": 1,
+        "Note": "SIEMPRE NOTAS SIEMPRE"
+
+    },
+    "Delivery": {
+        "AddressLine": "Carrera 10 10",
+        "CountryCode": "CO",
+        "CountryName": "Colombia",
+        "SubdivisionCode": 11,
+        "SubdivisionName": "Bogotá",
+        "CityCode": 11001,
+        "CityName": "Bogotá, D.c.",
+        "ContactPerson": 1234567,
+        "DeliveryDate": "2019-10-18T00:00:00",
+        "DeliveryCompany": "SERVIENTREGA"
+    },
+    "AdditionalDocuments": {
+        "OrderReference": 1,
+        "DespatchDocumentReference": 123,
+        "ReceiptDocumentReference": 12,
+        "AdditionalDocument": [
+            {
+                "DocumentNumber": 123,
+                "DocumentCode": "AAJ"
+            }
+        ]
+    },
+    "PaymentSummary": {
+        "PaymentType": 2,
+        "PaymentMeans": 10,
+        "PaymentNote": "INSTRUCCIONES DE PAGO"
+    },
+    "ItemInformation": [
+        {
+            "ItemReference": 1,
+            "Name": "Galleta de Vainilla",
+            "Quatity": 1.0,
+            "Price": 10000.00,
+            "LineAllowanceTotal": 1000.00,
+            "LineChargeTotal": 0,
+            "LineTotalTaxes": 1710.00,
+            "LineTotal": 10710.00,
+            "LineExtensionAmount": 9000.00,
+            "MeasureUnitCode": 94,
+            "FreeOFChargeIndicator": false,
+            "AdditionalReference": [
+             
+            ],
+            "AdditionalProperty": [
+                {
+                    "Name": "GOMEZ",
+                    "Value": 12345
+                }
+            ],
+            "TaxesInformation": [
+                {
+                    "Id": 01,
+                    "TaxEvidenceIndicator": false,
+                    "TaxableAmount": 9000.00,
+                    "TaxAmount": 1710.00,
+                    "Percent": 19.00,
+                    "BaseUnitMeasure": 0,
+                    "PerUnitAmount": 0
+                }
+            ],
+            "AllowanceCharge": [
+                {
+            		"Id": 4,
+            		"ChargeIndicator": false,
+            		"AllowanceChargeReason": "Envío gratis",
+            		"MultiplierFactorNumeric": 10.00,
+            		"Amount": 1000.00,
+            		"BaseAmount": 10000.00
+                }
+            ]
+        }
+    ],
+    "InvoiceTaxTotal": [
+        {
+            "Id": 01,
+            "TaxEvidenceIndicator": false,
+            "TaxableAmount": 9000.00,
+            "TaxAmount": 1710.00,
+            "Percent": 19.00,
+            "BaseUnitMeasure": 0,
+            "PerUnitAmount": 0.0
+        }
+    ],
+    "InvoiceAllowanceCharge": [
+        {
+            "Id": 1,
+            "ChargeIndicator": true,
+            "AllowanceChargeReason": "POR TRASNOCHAR PARA REVISAR LO DEL API",
+            "MultiplierFactorNumeric": 100.00,
+            "Amount": 10000.00,
+            "BaseAmount":10000.00
+        }
+    ],
+    "InvoiceTotal": {
+        "LineExtensionAmount": 9000.00,
+        "TaxExclusiveAmount": 9000.00,
+        "TaxInclusiveAmount": 10710.00,
+        "AllowanceTotalAmount": 0.0,
+        "ChargeTotalAmount": 10000.00,
+        "PrePaidAmount": 0.0,
+        "PayableAmount": 20710.00
+    }
+}

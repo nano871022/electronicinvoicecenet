@@ -1,0 +1,79 @@
+{
+    "CustomerInformation": {
+        "IdentificationType": 31,
+        "Identification": 830057860,
+        "DV": 4,
+        "RegistrationName": "PRUEBA FVN",
+        "CountryCode": "CO",
+        "CountryName": "Colombia",
+        "SubdivisionCode": 11,
+        "SubdivisionName": "Bogotá",
+        "CityCode": 11001,
+        "CityName": "Bogotá, D.C.",
+        "AddressLine": "CLL 122",
+        "Telephone": 7441111,
+        "Email": "adm.roger@gmail.com",
+        "CustomerCode": ""
+
+    },
+    "NoteGeneralInformation": {
+        "NoteNumber": "2",
+        "CUFE": "b6383c25b54a5c4364081fb571c9f933af759b59e3ba1c1b8569d336b21241ee9688c4c113251de148f6a3172a51e82c",
+        "ReferenceID": "SETT29",
+        "IssueDate": "2019-09-27T14:39:20",
+        "DiscrepancyCode": 2,
+        "Currency": "COP"
+
+    },
+    "ItemInformation": [
+        {
+            "ItemReference": 00000001,
+            "Name": "PRUEBA DE FVN",
+            "Quatity": 1,
+            "Price": 1000,
+            "LineExtensionAmount": 1000,
+            "MeasureUnitCode": "BIL",
+            "FreeOFChargeIndicator": false,
+            "AdditionalReference": [
+                {
+                    "ReferenceCode": 1,
+                    "ReferenceNumber": 1
+                }
+            ],
+            "AdditionalProperty": [
+                {
+                    "Name": "Color",
+                    "Value": "Blanco"
+                }
+            ],
+            "TaxesInformation": [
+                {
+                    "Id": "",
+                    "TaxEvidenceIndicator": false,
+                    "TaxableAmount": 0.0,
+                    "TaxAmount": 0.0,
+                    "Percent": 0.0,
+                    "BaseUnitMeasure": "",
+                    "PerUnitAmount": 0.0
+                }
+            ]
+        }
+    ],
+    "NoteTaxTotal": [
+        {
+            "Id": "",
+            "TaxEvidenceIndicator": false,
+            "TaxableAmount": 0.0,
+            "TaxAmount": 0.0,
+            "Percent": 0.0,
+            "BaseUnitMeasure": "",
+            "PerUnitAmount": 0.0
+        }
+    ],
+    "NoteTotal": {
+        "LineExtensionAmount": 1000.0,
+        "TaxExclusiveAmount": 0.0,
+        "TaxInclusiveAmount": 0.0,
+        "PayableAmount": 1000.0
+    }
+}
