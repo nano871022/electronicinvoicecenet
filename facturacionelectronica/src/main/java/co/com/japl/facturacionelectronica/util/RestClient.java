@@ -18,13 +18,19 @@ import static co.com.japl.facturacionelectronica.constants.RestClientConstants.C
 import static co.com.japl.facturacionelectronica.constants.RestClientConstants.SPACE;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.lang.reflect.Field;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -184,12 +190,12 @@ public class RestClient{
 			request.writeBytes(CONST_HEADER_VALUE_TWO_HYPENS+CONST_HEADER_VALUE_BOUNDARY+CONST_HEADER_VALUE_CTRF);
 			request.writeBytes(String.format(CONST_HEADER_CONTENT_DISPOSITION,"File",file.getName(),CONST_HEADER_VALUE_CTRF));
 			request.writeBytes(CONST_HEADER_VALUE_CTRF);
+			request.writeBytes(CONST_HEADER_VALUE_CTRF);
 			
 			InputStream fileToLoad = new FileInputStream(file);
 			byte[] bytes = new byte[(int) file.length()];
 			fileToLoad.read(bytes);
 			
-			//request.write(fileToLoad.readAllBytes());
 			request.write(bytes);
 			
 			request.writeBytes(CONST_HEADER_VALUE_CTRF);
